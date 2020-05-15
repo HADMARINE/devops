@@ -30,7 +30,9 @@ select yn in "Yes" "No"; do
         Yes ) 
           execute;
           break;;
-        No ) break;;
+        No )
+          echo "Abort." 
+          break;;
     esac
 done
 
