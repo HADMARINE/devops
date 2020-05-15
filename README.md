@@ -4,15 +4,15 @@
 
 ## Node backend
 
-### To create all of shell scripts
+### install.sh
+
+To install all shell scripts
 
 ```sh
 bash <(curl -s https://raw.githubusercontent.com/HADMARINE/devops/master/ubuntu_18_04_LTS/node_backend/install.sh)
 ```
 
-### To execute individual shells
-
-#### init.sh
+### init.sh
 
 To initialize environment
 
@@ -20,7 +20,7 @@ To initialize environment
 bash <(https://raw.githubusercontent.com/HADMARINE/devops/master/ubuntu_18_04_LTS/node_backend/init.sh)
 ```
 
-#### node_test.sh
+### node_test.sh
 
 To test if the package is installed correctly
 
