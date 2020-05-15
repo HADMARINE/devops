@@ -17,7 +17,7 @@ bash <(curl -s https://raw.githubusercontent.com/HADMARINE/devops/master/ubuntu_
 To initialize environment
 
 ```sh
-bash <(https://raw.githubusercontent.com/HADMARINE/devops/master/ubuntu_18_04_LTS/node_backend/init.sh)
+bash <(curl -s https://raw.githubusercontent.com/HADMARINE/devops/master/ubuntu_18_04_LTS/node_backend/init.sh)
 ```
 
 ### node_test.sh
