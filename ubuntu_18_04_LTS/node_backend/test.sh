@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 function execute() {
   mkdir node_test && cd node_test
