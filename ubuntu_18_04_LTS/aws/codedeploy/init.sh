@@ -8,3 +8,4 @@ bash <(curl https://aws-codedeploy-ap-northeast-2.s3.ap-northeast-2.amazonaws.co
 chmod +x ./install
 sudo ./install auto
 sudo rm -rf ./install
+sudo service codedeploy-agent start
