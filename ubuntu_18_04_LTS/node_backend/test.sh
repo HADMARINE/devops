@@ -16,17 +16,4 @@ function execute() {
   sudo node node_test/index.js
 }
 
-
-echo "This Shell Script works on Ubuntu 18.04 LTS"
-echo "Do you wish to install this program?"
-select yn in "Yes" "No"; do
-    case $yn in
-        Yes ) 
-          execute;
-          break;;
-        No ) 
-          echo "Abort."
-          break;;
-    esac
-done
-
+exeucte;
