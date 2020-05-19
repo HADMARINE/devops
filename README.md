@@ -20,10 +20,18 @@ To initialize environment
 bash <(curl -s https://raw.githubusercontent.com/HADMARINE/devops/master/ubuntu_18_04_LTS/node_backend/init.sh)
 ```
 
-### node_test.sh
+### test.sh
 
 To test if the package is installed correctly
 
 ```sh
 bash <(curl -s https://raw.githubusercontent.com/HADMARINE/devops/master/ubuntu_18_04_LTS/node_backend/test.sh)
+```
+
+## AWS
+
+### Code Deploy Agent
+
+```sh
+bash <(curl -s https://raw.githubusercontent.com/HADMARINE/devops/master/ubuntu_18_04_LTS/aws/codedeploy/init.sh)
 ```
