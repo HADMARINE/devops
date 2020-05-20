@@ -4,7 +4,7 @@
 
 cd /home/ubuntu
 sudo apt update -y
-sudo apt install -y ruby2.0 wget
+sudo apt install -y ruby wget
 
 until service codedeploy-agent status >/dev/null 2>&1; do
    sleep 60
