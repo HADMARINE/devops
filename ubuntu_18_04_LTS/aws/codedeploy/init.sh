@@ -19,23 +19,23 @@ done
 # wget https://aws-codedeploy-ap-northeast-2.s3.ap-northeast-2.amazonaws.com/latest/install
 # sudo chmod +x ./install
 # sudo ./install auto
-if systemctl is-enabled --quiet codedeploy-agent; then
-  echo " --- CODEDEPLOY AGENT is ENABLED! --- "
-  if systemctl is-active --quiet codedeploy-agent; then
-    echo " --- CODEDEPLOY AGENT is ACTIVE! --- "
-  else
-    echo " --- CODEDEPLOY AGENT is NOT ACTIVE! --- "
-    sudo systemctl start codedeploy-agent
-    systemctl status codedeploy-agent
-  fi
-else
-  echo " --- CODEDEPLOY AGENT is NOT ENABLED! --- "
-  sudo systemctl enable codedeploy-agent
-  sudo systemctl start codedeploy-agent
-  sleep 5
-  if systemctl is-active --quiet codedeploy-agent; then
-    echo " --- CODEDEPLOY AGENT is ACTIVE! --- "
-  fi
-fi
+# if systemctl is-enabled --quiet codedeploy-agent; then
+#   echo " --- CODEDEPLOY AGENT is ENABLED! --- "
+#   if systemctl is-active --quiet codedeploy-agent; then
+#     echo " --- CODEDEPLOY AGENT is ACTIVE! --- "
+#   else
+#     echo " --- CODEDEPLOY AGENT is NOT ACTIVE! --- "
+#     sudo systemctl start codedeploy-agent
+#     systemctl status codedeploy-agent
+#   fi
+# else
+#   echo " --- CODEDEPLOY AGENT is NOT ENABLED! --- "
+#   sudo systemctl enable codedeploy-agent
+#   sudo systemctl start codedeploy-agent
+#   sleep 5
+#   if systemctl is-active --quiet codedeploy-agent; then
+#     echo " --- CODEDEPLOY AGENT is ACTIVE! --- "
+#   fi
+# fi
 
-sudo systemctl restart codedeploy-agent
+# sudo service codedeploy-agent restart
