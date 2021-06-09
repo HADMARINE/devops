@@ -8,7 +8,7 @@ function execute() {
   sudo apt update
   sudo apt install -y nodejs yarn nginx
   sudo npm install -g pm2
-  sudo chmod -R 777 /home/ubuntu/.c˜onfig
+  sudo chmod -R 777 /home/ubuntu/.config
   sudo rm -rf /etc/nginx/sites-available/default
   sudo echo "
   server {
