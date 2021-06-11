@@ -5,7 +5,7 @@
 cd /home/ubuntu
 sudo apt update -y
 sudo apt install -y ruby
-sudo apt install build-essential -y
+sudo apt install -y build-essential
 
 until service codedeploy-agent status >/dev/null 2>&1; do
    sleep 30
